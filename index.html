@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNet</title>
+    <script src="./src/js/tailwindcss.js"></script>
+    <script src="./src/fontawesome/css/all.min.css"></script>
+    <script src="./src/fontawesome/js/all.min.js"></script>
+    <script defer src="./src/js/main.js"></script>
+</head>
+<!-- Início do Body -->
+<body class="bg-stone-900 text-stone-300 font-semibold">
+
+    <!-- Início do Navbar -->
+    <nav class="bg-stone-950 px-4 py-2 flex justify-between  items-center fixed z-10 shadowlg shadow-stone-900 w-full">
+
+        <!-- Início Lado Esquerdo Navbar -->
+        <div class="lado-esquerdo flex gap-4 items-center">
+            <img src="./images/logo.png" alt="Logotipo Devnet" class="w-16">
+            <div class="barra-pesquisa bg-stone-800 rounded-full py-2 px-4">
+                <i class="fas fa-magnifying-glass"></i>
+                <input 
+                    type="search" 
+                    placeholder="Pesquisar no Devnet" 
+                    class="bg-transparent outline-none">
+            </div>
+        </div>
+        <!-- Fim Lado Esquerdo Navbar -->
+
+        <!-- Início Lado Centro Navbar -->
+        <ul class="lado-centro flex gap-4">
+            <li class="border-b-2 border-red-600 -mb-1">
+                <a href="/" class="text-2xl hove:bg-stone-800 py-3 h-14 px-10 transition-all rounded-md flex items-center justify-center">
+                    <i class="fas fa-house"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/" class="text-2xl hove:bg-stone-800 py-3 h-14 px-10 transition-all rounded-md flex items-center justify-center">
+                    <i class="fas fa-video"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/" class="text-2xl hove:bg-stone-800 py-3 h-14 px-10 transition-all rounded-md flex items-center justify-center">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/" class="text-2xl hove:bg-stone-800 py-3 h-14 px-10 transition-all rounded-md flex items-center justify-center">
+                    <i class="fas fa-users"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/" class="text-2xl hove:bg-stone-800 py-3 h-14 px-10 transition-all rounded-md flex items-center justify-center">
+                    <i class="fas fa-gamepad"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- Fim Lado Centro Navbar -->
+
+        <!-- Início Lado Direito Navbar -->
+        <div class="lado-direito flex gap-4 items-center">
+            <div class="perfil flex gap-2 items-center">
+                <img src="./images/perfil.png" alt="Foto Perfil do Usuário" class="w-12 rounded-full">
+                <p class="nome-usuario">Marcelo Moraes</p>
+            </div>
+            <div class="icones">
+                <button class="bg-stone-800 p-2 hover:bg-stone-900 transition-all text=xl rounded-full size-12">
+                    <i class="fas fa-bars"></i>    
+                </button>
+                <button class="bg-stone-800 p-2 hover:bg-stone-900 transition-all text=xl rounded-full size-12">
+                    <i class="fas fa-comment"></i>
+                </button>
+                <button class="bg-stone-800 p-2 hover:bg-stone-900 transition-all text=xl rounded-full size-12">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="bg-stone-800 p-2 hover:bg-stone-900 transition-all text=xl rounded-full size-12">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Fim Lado Direito Navbar -->
+    </nav>
+    <!-- Fim do Navbar -->
+
+
+    <!-- Início Parte Principal -->
+    <main class="px-8 py-28">
+        <div class="mx-auto w-full max-w-[1920px] h-full flex">
+
+            <!-- Lado Esquerdo Parte Principal -->
+            <div class="max-w-sm w-full"></div>
+            <aside class="lado-esquerdo w-full fixed top-24 max-w-sm flex flex-col justify-between h-[calc(100vh-120px)]">
+                <div class="lista grid gap-1">
+                    <a href="/" class="hover:bg-stone-800 transition-all rounded-md block h-14">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <img 
+                            src="./images/perfil.png" 
+                            alt="Foto de Perfil do usuário" 
+                            class="w-10 rounded-full">
+                            <p>Marcelo Moraes</p>
+                        </div>
+                    </a>
+                    <a href="/" class="hover:bg-stone-800 transition-all rounded-md  h-14 flex items-center">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <i class="fas fa-user-group text-2xl w-10 text-emerald-500"></i>
+                            <p>Amigos</p>
+                        </div>
+                    </a>
+                    <a href="/" class="hover:bg-stone-800 transition-all rounded-md  h-14 flex items-center">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <i class="fas fa-chart-pie text-2xl w-10 text-fuchsia-500"></i>
+                            <p>Dashboard Profissional</p>
+                        </div>
+                    </a>
+                    <a href="/" class="hover:bg-stone-800 transition-all rounded-md  h-14 flex items-center">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <i class="fas fa-newspaper text-2xl w-10 text-sky-500"></i>
+                            <p>Feeds</p>
+                        </div>
+                    </a>
+                    <a href="/" class="hover:bg-stone-800 transition-all rounded-md  h-14 flex items-center">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <i class="fas fa-users text-2xl w-10 text-red-500"></i>
+                            <p>groups</p>
+                        </div>
+                    </a>
+                    <a href="/" class="hover:bg-stone-800 transition-all rounded-md  h-14 flex items-center">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <i class="fas fa-shopping-cart text-2xl w-10 text-orange-500"></i>
+                            <p>Marketplace</p>
+                        </div>
+                    </a>
+                    <button class="hover:bg-stone-800 transition-all rounded-md  h-14 flex items-center">
+                        <div class="flex items-center gap-3 p-2 w-full">
+                            <div class="bg-stone-800 p-2 transition-all text=xl rounded-full size-12">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <p>Ver mais</p>
+                        </div>
+                    </button>
+                    <hr class="border-stone-700 my-4">
+                </div>
+
+                <footer class="text-stone-500 text-sm">
+                    <p>Privacidade . Termos . Anúncios . Cookies</p>
+                    <p>Mais . Devnet &copy; 2040</p>
+                </footer>
+            </aside>
+            <!-- Fim Lado Esquerdo Parte Principal -->
+
+
+            <!-- Lado Centro Parte Principal -->
+            <div class="lado-centro w-full">
+                <div class="max-w-[650px] mx-auto">
+                    <!-- Início Status -->
+                    <div class="status grid grid-cols-4 gap-4">
+
+                        <div class="statu bg-[url('./images/status/status-1.jpg')] bg-no-repeat bg-cover bg-center h-56 flex items-start flex-col justify-between p-3 rounded-md shadow-md shadow-black hover:scale-105 transition-all cursor-pointer">
+                            <img 
+                                src="./images/amigos/amigo-8.jpg" 
+                                alt="Foto Amigo 8"
+                                class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                            <p class="[text-shadow:2px_2px_5px_#000]">Adam Wathan</p>
+                        </div>
+                        
+                        <div class="statu bg-[url('./images/status/status-2.jpg')] bg-no-repeat bg-cover bg-center h-56 flex items-start flex-col justify-between p-3 rounded-md shadow-md shadow-black hover:scale-105 transition-all cursor-pointer">
+                            <img 
+                                src="./images/amigos/amigo-2.jpg" 
+                                alt="Foto Amigo 2"
+                                class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                            <p class="[text-shadow:2px_2px_5px_#000]">Mark Zuckerberg</p>
+                        </div>
+
+                        <div class="statu bg-[url('./images/status/status-3.jpg')] bg-no-repeat bg-cover bg-center h-56 flex items-start flex-col justify-between p-3 rounded-md shadow-md shadow-black hover:scale-105 transition-all cursor-pointer">
+                            <img 
+                                src="./images/amigos/amigo-5.jpg" 
+                                alt="Foto Amigo 5"
+                                class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                            <p class="[text-shadow:2px_2px_5px_#000]">Elon Musk</p>
+                        </div>
+
+                        <div class="statu bg-[url('./images/status/status-4.jpg')] bg-no-repeat bg-cover bg-center h-56 flex items-start flex-col justify-between p-3 rounded-md shadow-md shadow-black hover:scale-105 transition-all cursor-pointer">
+                            <img 
+                                src="./images/amigos/amigo-6.jpg" 
+                                alt="Foto Amigo 6"
+                                class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                            <p class="[text-shadow:2px_2px_5px_#000]">Tim Berners Lee</p>
+                        </div>
+
+                    </div>
+                    <!-- Fim Status -->
+
+                    <!-- Início do Formulário de Posts -->
+                    <div class="formulario-post bg-stone-950 my-10 rounded-md p-4">
+
+                        <div class="cima flex items-start gap-3">
+                            <!-- imagem -->
+                            <img 
+                                src="./images/perfil.png" 
+                                alt=""
+                                class="w-12 rounded-full">
+                            <!-- formulário -->
+                            <div class="w-full flex gap-3">
+                                <form id="upload-post" class="w-full">
+                                    <input 
+                                        type="text" 
+                                        name="mensagem"
+                                        id="mensagem-post"
+                                        required
+                                        placeholder="O que você está pensando, Marcelo!?"
+                                        class="bg-stone-800 p-2 px-4 w-full rounded-full outline-none focus:outline-red-600">
+                                    <input 
+                                        type="file"
+                                        name="imagem"
+                                        id="ficheiro-imagem"
+                                        required
+                                        hidden
+                                        accept="./image/">
+                                    <button class="bg-red-600 mt-2 w-full p-2 rounded-full hover:bg-red-700 transition-all post-btn hidden">Postar agora</button>
+                                </form>
+
+                                <div class="showcase-post grid gap-2 hidden">
+                                    <img 
+                                        src="./images/posts/post-1.jpg" 
+                                        class="h-10 object-cover aspect-video post-imagem">
+                                    <button class="text-stone-900 bg-stone-200 text-xl rounded-full size-10 mx-auto hover:bg-red-600 transition-all remove-img">
+                                        <i class="fas fa-xmark"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <hr class="border-stone-700 my-3">
+
+                        <div class="baixo px-8 grid grid-cols-3 place-items-center">
+                            <button class="flex items-center gap-2 hover:bg-stone-800 transition-all p-3 rounded-md w-full justify-center">
+                                <i class="fas fa-video text-emerald-500 text-xl"></i>
+                                Vídeo em directo
+                            </button>
+
+                            <button class="carregar-foto flex items-center gap-2 hover:bg-stone-800 transition-all p-3 rounded-md w-full justify-center">
+                                <i class="fas fa-photo-film text-red-500 text-xl"></i>
+                                Foto/Vídeo
+                            </button>
+
+                            <button class="flex items-center gap-2 hover:bg-stone-800 transition-all p-3 rounded-md w-full justify-center">
+                                <i class="fas fa-clapperboard text-yellow-500 text-xl"></i>
+                                Reels
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Fim do Formulário de Posts -->
+
+
+                    <!-- Início do feed de notícias -->
+                    <div class="feed grid gap-6">
+                        <div class="post bg-stone-950 rounded-md shadow-md shadow-black/50">
+                            <!-- parte de cima -->
+                            <div class="cima p-3 flex justify-between items-center">
+                                <div class="esquerdo flex items-center gap-2">
+                                    <img src="{{perfil}}" class="w-10 rounded-full">
+                                    <div class="grid">
+                                        <p>{{usuario}}</p>
+                                        <small class="text-stone-500">
+                                            1 hora atrás . sorocaba. <i class="fas fa-earth-americas"></i>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="direito">
+                                    <button class="size-8 rounded-full text-2xl hover:bg-stone-800">
+                                        <i class="fas fa-ellipsis"></i>
+                                    </button>
+                                    <button class="size-8 rounded-full text-2xl hover:bg-stone-800">
+                                        <i class="fas fa-xmark"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- parte do meio -->
+                            <div class="meio">
+                                <p class="indent-4 pb-4 font-normal text-stone-300">{{mensagem}}</p>
+                                <img src="{{imagem}}" class="w-full object-cover max-h-[500px]">
+                            </div>
+
+                            <!-- parte de baixo -->
+                            <div class="baixo p-3">
+                                <div class="primeira flex justify-between">
+                                    <div class="reacoes flex gap-2 items-center">
+                                        <div class="emojis text-xl">
+                                            <i class="fas fa-thumbs-up text-sky-500"></i>
+                                            <i class="fas fa-face-smile text-yellow-500"></i>
+                                            <i class="fas fa-heart text-red-500"></i>
+                                        </div>
+                                        Você, Elon, Mark, Bill e outras {{gostos}} pessoas
+                                    </div>
+                                    <p>{{comentarios}} comentários</p>
+                                </div>
+                                <hr class="border-stone-700 my-2">
+                                <div class="segunda grid grid-cols-3">
+                                    <button class="flex items-center gap-2 hover:bg-stone-800 transition-all p-3 rounded-md w-full justify-center">
+                                        <i class="far fa-thumbs-up  text-xl"></i>
+                                        Gostar
+                                    </button>
+        
+                                    <button class="flex items-center gap-2 hover:bg-stone-800 transition-all p-3 rounded-md w-full justify-center">
+                                        <i class="far fa-comment text-xl"></i>
+                                        Comentar
+                                    </button>
+        
+                                    <button class="flex items-center gap-2 hover:bg-stone-800 transition-all p-3 rounded-md w-full justify-center">
+                                        <i class="fas fa-share  text-xl"></i>
+                                        Compartilhar
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fim do feed de notícias -->
+                </div>
+            </div>
+            <!-- Fim Lado Centro Parte Principal -->
+
+
+            <!-- Lado Direito Parte Principal -->
+            <div class="max-w-sm w-full"></div>
+            <div class="lado-direito h-[calc(100vh-120px)] fixed top-24 right-0 max-w-sm max-h-full p-2 w-full overflow-y-auto">
+                <div class="anuncio">
+                    <h2 class="font-bold text-xl indent-2">Patrocinado</h2>
+                    <a 
+                        href="https://uanelacomo.como/events/semana-web-pro-max" 
+                        target="_blank" 
+                        class="flex gap-3 items-center p-2 hover:bg-stone-800 mt-2 rounded-md">
+                        <img 
+                            src="./images/anuncio.jpg" 
+                            alt="Imagem do Anúncio"
+                            class="rounded-md w-32">
+                        <div>
+                            <h3 class="font-bold">Semana Web Pro Max | Abril 24</h3>
+                            <small class="text-stone-500 break-all">
+                                https://uanelacomo.como/events/semana-web-pro-max
+                            </small>
+                        </div>
+                    </a>
+                </div>
+                <hr class="border-stone-700 my-4">
+                <div class="contactos">
+                    <div class="subtitulo flex items-center justify-between">
+                        <h2 class="font-bold text-xl indent-2">Contactos</h2>
+                        <div class="icones">
+                            <button class="rounded-full size-8 hover:bg-stone-800 transition-all">
+                                <i class="fas fa-magnifying-glass"></i>
+                            </button>
+                            <button class="rounded-full size-8 hover:bg-stone-800 transition-all">
+                                <i class="fas fa-ellipsis"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Fim do Subtitulo Contacto -->
+                    <div class="mt-2">
+                        <a 
+                            href="/" 
+                            class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                            <img 
+                                src="./images/amigos/amigo-1.jpg" 
+                                alt="Foto Amigo 1"
+                                class="w-10 rounded-full">
+                            <p>Steve Jobs</p>
+                            <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                        </a>
+                        <a 
+                            href="/" 
+                            class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                            <img 
+                                src="./images/amigos/amigo-2.jpg" 
+                                alt="Foto Amigo 2"
+                                class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                            <p>Mark Zuckerberg</p>
+                            <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                        </a>
+                        <a 
+                            href="/" 
+                            class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                            <img 
+                                src="./images/amigos/amigo-3.jpg" 
+                                alt="Foto Amigo 3"
+                                class="w-10 rounded-full">
+                            <p>Bill Gates</p>
+                            <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                        </a>
+                        <a 
+                            href="/" 
+                            class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                        <img 
+                            src="./images/amigos/amigo-4.jpg" 
+                            alt="Foto Amigo 4"
+                            class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                        <p>Linus Torvalds</p>
+                        <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                        </a>
+                        <a 
+                            href="/" 
+                            class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                        <img 
+                            src="./images/amigos/amigo-5.jpg" 
+                            alt="Foto Amigo 5"
+                            class="w-10 rounded-full p-[2px] border-2 border-red-600">
+                        <p>Elon Musk</p>
+                        <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                        </a>
+                        <a 
+                            href="/" 
+                            class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                        <img 
+                            src="./images/amigos/amigo-6.jpg" 
+                            alt="Foto Amigo 6"
+                            class="w-10 rounded-full">
+                        <p>Tim Berners Lee</p>
+                        <div class="size-3 bg-red-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                        </a>
+                    <a 
+                        href="/" 
+                        class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                    <img 
+                        src="./images/amigos/amigo-7.jpg" 
+                        alt="Foto Amigo 7"
+                        class="w-10 rounded-full">
+                    <p> Brendan</p>
+                    <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                    </a>
+                <a 
+                    href="/" 
+                    class="flex items-centergap-3 p-2 hover:bg-stone-800 transition-all h-14 rounded-md relative">
+                <img 
+                    src="./images/amigos/amigo-8.jpg" 
+                    alt="Foto Amigo 8"
+                    class="w-10 rounded-full">
+                <p>Adam Wathan</p>
+                <div class="size-3 bg-emerald-400 rounded-full border-2 border-stone-900 absolute left-9 bottom-2"></div>
+                </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Lado Direito Parte Principal -->
+
+        </div>
+    </main>
+    <!-- Fim Parte Principal -->
+
+</body>
+<!-- Fim do Body -->
+
+</html>
